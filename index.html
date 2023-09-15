@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Bar Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      /* Style for the legend box */
+      .legend-box {
+        display: none; /* Initially hide the legend box */
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        float: left; /* Float it to the left of the chart */
+        margin-left: 20px; /* Add some margin for spacing */
+      }
+    </style>
+</head>
+<body>
+    <input type="file" id="csvFileInput" accept=".csv">
+    <canvas id="barChart" width="800" height="600"></canvas>
+    <div class="legend-box">
+        <p>AREAS - DIVISION OFFENSE OCCURRED IN</p>
+        <p>EPD - EAST</p>
+        <p>MPD - METRO</p>
+        <p>SCP - SHOAL CREEK</p>
+        <p>SPD - SOUTH</p>
+        <p>CPD - CENTRAL</p>
+        <p>NPD - NORTH</p>
+    </div>
+    <script src="plots.js"></script>
+</body>
+</html>
+
